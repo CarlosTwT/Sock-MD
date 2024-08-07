@@ -96,7 +96,7 @@ const expiredCheck = (haruka, _dir) => {
             let txt = `Premium caducado, gracias por suscribirte`
             haruka.sendMessage(_dir[position].id, { text: txt })
             _dir.splice(position, 1)
-            fs.writeFileSync('./Sock/database/premium.json', JSON.stringify(_dir, null, 2))
+            fs.writeFileSync('./ShunAi/database/premium.json', JSON.stringify(_dir, null, 2))
         }
     }, 1000)
 }

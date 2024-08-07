@@ -7,7 +7,7 @@ const chalk = require('chalk')
 const util = require('util')
 
 const listCase = () => {
-const code = fs.readFileSync("./Sock.js", "utf8")
+const code = fs.readFileSync("./shun.js", "utf8")
 var regex = /case\s+'([^']+)':/g;
 var matches = [];
 var match;
