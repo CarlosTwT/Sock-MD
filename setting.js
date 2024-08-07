@@ -34,9 +34,7 @@ global.baileys = require('@whiskeysockets/baileys') // no lo cambies
 global.usePairingCode = true // false = qrCode, true = emparejamientoCode
 global.sessionName = 'session' // no lo cambies
 global.gris = '`' // no lo cambies
-global.wlcm = [] // no lo cambies
-global.wlcmm = [] // no lo cambies
-global.wm = `Follow me IG: C4rl0s_9e` // footer text
+global.wm = `Sock AI - Wa Bot` // footer text
 global.autobio = false // false = off, true = on
 global.autoread = true // false = off, true = on
 //—————「 SYSTEM 」—————//
@@ -44,8 +42,8 @@ global.autoread = true // false = off, true = on
 
 
 //—————「 BOT 」—————//
-global.canal = 'FlarexCloud Host🎐' // Opcional 
-global.channel = "120363312011221059@newsletter" // Opcional
+global.canal = 'Sock AI channel🎐' // Opcional 
+global.channel = "120363301101357890@newsletter" // Opcional
 global.botname = 'Ｓｏｃｋ ＭＤ' // este es el nombre del robot
 global.bottz = '593986755613' // Reemplácelo con el número del bot para obtener el código de emparejamiento. 
 global.packname = 'C4rl0s_9e' // wm sticker
@@ -57,7 +55,7 @@ global.versions = `${shun}`
 
 
 //—————「 OWNER 」—————//
-global.ownername = 'CarlaoEe' // Cambia tu nombre
+global.ownername = 'CarlosE' // Cambia tu nombre
 global.owner = ['593991398786'] // cambia tu numero
 global.ownermail = ['carlos.e.escobarmc@gmail.com@gmail.com'] // Opcional
 //—————「 OWNER 」—————//
@@ -68,7 +66,7 @@ global.ownermail = ['carlos.e.escobarmc@gmail.com@gmail.com'] // Opcional
 global.mess = {
     ban: ctext('*[ Error ]* el propietario lo ha prohibido'),
     badm: ctext('*[ Aviso del sistema ]* necesito ser *admin*'),
-    regis: ctext(`*[ Error de acceso ]*\n\n¡Aún no te has registrado!\nRegístrate con *.register nombre.edad*`),
+    regis: ctext(`*[ Acceso denegado ]*\n\n¡Aún no te has registrado!\nRegístrate oprimiendo el siguiente botón!*`),
     premium: ctext('*[ Aviso del sistema]* este comando es único para usuarios premium'),
     search: ctext('🔍 *buscando en el servidor. . .*'),
     done: ctext('Hecho...'),
