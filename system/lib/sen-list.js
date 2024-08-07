@@ -29,168 +29,166 @@ const ctext = (text, style = 1) => {
 };
 
 global.menuai = (prefix) => {
-  return ctext(`
+  return ctext(`   ${gris}「 I A 」${gris}   
 
-┃       「 *I A* 」   ┃
-
-┌──⭓
-  ${prefix}ia (best)
-  ${prefix}openai
-  ${prefix}gpt4
-  ${prefix}tts
-  ${prefix}text2img
-  ${prefix}blackbox
-  ${prefix}gemini
-└───────⭓
-
+  々${prefix}ia (best)
+  々${prefix}openai
+  々${prefix}gpt4
+  々${prefix}tts
+  々${prefix}text2img
+  々${prefix}blackbox
+  々${prefix}gemini
 `);
 };
 
 global.menuanime = (prefix) => {
-return ctext(`「 *A N I M E* 」
-┌──⭓
-  ${prefix}waifu
-  ${prefix}neko
-└───────⭓`)}
+return ctext(`${gris}「 A N I M E 」${gris}
+
+  々${prefix}waifu
+  々${prefix}neko
+`)}
 
 global.menudatabase = (prefix) => {
-return ctext(`「 *D A T A B A S E* 」
-┌──⭓
-  ${prefix}ping
-  ${prefix}serverinfo
-  ${prefix}get >url
-  ${prefix}ccgenerator 
-  ${prefix}runtime
-└───────⭓`)}
+return ctext(`${gris}「 D A T A B A S E 」${gris}
+
+  々${prefix}ping
+  々${prefix}profile @tag
+  々${prefix}serverinfo
+  々${prefix}get >url
+  々${prefix}ccgenerator 
+  々${prefix}runtime
+`)}
 
 global.menudownload = (prefix) => {
-return ctext(`「 *D O W N L O A D* 」
-┌──⭓
-  ${prefix}ytmp4
-  ${prefix}whatmusic
-  ${prefix}ytmp3
-  ${prefix}tiktok
-  ${prefix}threads
-  ${prefix}spotify
-  ${prefix}play
-└───────⭓`)}
+return ctext(`${gris}「 D O W N L O A D 」${gris}
+
+  々${prefix}ytmp4
+  々${prefix}whatmusic
+  々${prefix}ytmp3
+  々${prefix}tiktok
+  々${prefix}fb >video 
+  々${prefix}threads
+  々${prefix}spotify
+  々${prefix}play
+`)}
 
 
 global.menugroup = (prefix) => {
-return ctext(`「 *G R O U P* 」
-┌──⭓
-  ${prefix}getcontact
-  ${prefix}totag
-  ${prefix}fakechat @|txt|txt
-  ${prefix}event >txt|txt
-  ${prefix}linkgroup
-  ${prefix}linkgc
-  ${prefix}resetlinkgc
-  ${prefix}sendlinkgc
-  ${prefix}kick @
-  ${prefix}promote @
-  ${prefix}demote @
-  ${prefix}hidetag
-  ${prefix}tagall
-└───────⭓`)}
+return ctext(`${gris}「 G R O U P 」${gris}
+
+  々${prefix}getcontact
+  々${prefix}totag
+  々${prefix}fakechat @|txt|txt
+  々${prefix}linkgroup
+  々${prefix}linkgc
+  々${prefix}resetlinkgc
+  々${prefix}sendlinkgc
+  々${prefix}kick @
+  々${prefix}promote @
+  々${prefix}demote @
+  々${prefix}hidetag
+  々${prefix}tagall
+`)}
 
 global.menuother = (prefix) => {
-return ctext(`「 *O T H E R* 」
-┌──⭓
-  ${prefix}sc
-  ${prefix}owner
-  ${prefix}afk
-  ${prefix}limit
-  ${prefix}clima
-  ${prefix}comicslogo
-└───────⭓`)}
+return ctext(`${gris}「 O T H E R 」${gris}
+
+  々${prefix}sc
+  々${prefix}pvp >vs bot   
+  々${prefix}owner
+  々${prefix}licencia
+  々${prefix}afk
+  々${prefix}limit
+  々${prefix}clima
+  々${prefix}comicslogo
+`)}
 
 global.menuowner = (prefix) => {
-return ctext(`「 *O W N E R* 」
-┌──⭓
-  ${prefix}resetlimit
-  ${prefix}addlimit
-  ${prefix}pushcontact2
-  ${prefix}pushcontact
-  ${prefix}getidgc
-  ${prefix}join
-  ${prefix}addgc
-  ${prefix}delgc
-  ${prefix}backup
-  ${prefix}getcase
-  ${prefix}biochange
-  ${prefix}autobio
-  ${prefix}readchange
-  ${prefix}autoread
-  ${prefix}public
-  ${prefix}self
-  ${prefix}addprem
-  ${prefix}delprem
-  ${prefix}listpremium
-  ${prefix}listprem
-  ${prefix}bcgc
-  ${prefix}bcgroup
-  ${prefix}restart
-  ${prefix}delcase
-  ${prefix}addcase
-  ${prefix}addcase
-└───────⭓`)}
+return ctext(`${gris}「 O W N E R 」${gris}
+
+  々${prefix}pushcontact2
+  々${prefix}pushcontact
+  々${prefix}getidgc
+  々${prefix}join
+  々${prefix}addgc
+  々${prefix}delgc
+  々${prefix}backup
+  々${prefix}getcase
+  々${prefix}biochange
+  々${prefix}autobio
+  々${prefix}public
+  々${prefix}self
+  々${prefix}bcgc
+  々${prefix}bcgroup
+  々${prefix}restart
+  々${prefix}delcase
+  々${prefix}addcase
+`)}
 
 global.menusearch = (prefix) => {
-return ctext(`「 *S E A R C H* 」
-┌──⭓
-  ${prefix}pinterest
-  ${prefix}leerqr >imagen
-  ${prefix}pin
-  ${prefix}tiktoksearch 
-  ${prefix}ytsearch
-  ${prefix}play
-└───────⭓`)}
+return ctext(`${gris}「 S E A R C H 」${gris}
+
+  々${prefix}pinterest
+  々${prefix}igstalk >user
+  々${prefix}leerqr >imagen
+  々${prefix}pin
+  々${prefix}tiktoksearch 
+  々${prefix}play
+`)}
 
 global.menustickanim = (prefix) => {
-return ctext(`「 *S T I C K E R S* 」
-┌──⭓
-  ${prefix}kill
-  ${prefix}pat
-  ${prefix}lick
-  ${prefix}bite
-  ${prefix}yeet
-  ${prefix}bonk
-  ${prefix}wink
-  ${prefix}poke
-  ${prefix}nom
-  ${prefix}slap
-  ${prefix}smile
-  ${prefix}wave
-  ${prefix}blush
-  ${prefix}smugh
-  ${prefix}glomp
-  ${prefix}happy
-  ${prefix}dance
-  ${prefix}cringe
-  ${prefix}highfive
-  ${prefix}handhold
-└───────⭓`)}
+return ctext(`${gris}「 S T I C K E R S 」${gris}
+
+  々${prefix}kill
+  々${prefix}pat
+  々${prefix}lick
+  々${prefix}bite
+  々${prefix}yeet
+  々${prefix}bonk
+  々${prefix}wink
+  々${prefix}poke
+  々${prefix}nom
+  々${prefix}slap
+  々${prefix}smile
+  々${prefix}wave
+  々${prefix}blush
+  々${prefix}smugh
+  々${prefix}glomp
+  々${prefix}happy
+  々${prefix}dance
+  々${prefix}cringe
+  々${prefix}highfive
+  々${prefix}handhold
+`)}
 
 global.menutools = (prefix) => {
-return ctext(`「 *T O O L S* 」
-┌──⭓
-  ${prefix}hd
-  ${prefix}ssweb
-  ${prefix}ssfull
-  ${prefix}toimg
-  ${prefix}toaud
-  ${prefix}tomp3
-  ${prefix}circlevideo
-  ${prefix}tovn
-  ${prefix}tourl
-  ${prefix}shortlink
-  ${prefix}sticker
-  ${prefix}smeme
-  ${prefix}wm
-  ${prefix}letra
-  ${prefix}gitclone
-└───────⭓`)}
+return ctext(`${gris}「 T O O L S 」${gris}
+
+  々${prefix}hd
+  々${prefix}ssweb
+  々${prefix}ssfull
+  々${prefix}toimg
+  々${prefix}toaud
+  々${prefix}tomp3
+  々${prefix}circlevideo
+  々${prefix}tovn
+  々${prefix}tourl
+  々${prefix}shortlink
+  々${prefix}sticker
+  々${prefix}smeme
+  々${prefix}wm
+  々${prefix}letra
+  々${prefix}gitclone
+`)}
+
+global.endmenu = (prefix) => {
+return ctext(`${gris}「 S O C K - A I 」${gris}
+
+➣  ║▌│█║▌│ █║▌│█│║▌║
+➣  ║▌│█║▌│ █║▌│█│║▌║
+
+➣ Copyright © ঔৣ͜͡Ⓒ乂 Sock AI WhatsApp - Bot 愛 2024
+`)}
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
