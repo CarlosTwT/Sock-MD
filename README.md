@@ -46,4 +46,4 @@ npm start
 
 # Gracias a
 
--   [`Dika`](https://github.com/CarlosTwT)
+-   [`Carlos`](https://github.com/CarlosTwT)
