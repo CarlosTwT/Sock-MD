@@ -157,8 +157,8 @@ exports.formatDate = (n, locale = 'id') => {
 }
 
 exports.tanggal = (numer) => {
-	myMonths = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-				myDays = ['Minggu','Senin','Selasa','Rabu','Kamis','Jum’at','Sabtu']; 
+	myMonths = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+				myDays = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado']; 
 				var tgl = new Date(numer);
 				var day = tgl.getDate()
 				bulan = tgl.getMonth()
@@ -166,11 +166,11 @@ exports.tanggal = (numer) => {
 				thisDay = myDays[thisDay];
 				var yy = tgl.getYear()
 				var year = (yy < 1000) ? yy + 1900 : yy; 
-				const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+				const time = moment.tz('America/Guayaquil').format('DD/MM HH:mm:ss')
 				let d = new Date
 				let locale = 'id'
 				let gmt = new Date(0).getTime() - new Date('1 January 1970').getTime()
-				let weton = ['Pahing', 'Pon','Wage','Kliwon','Legi'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
+				let weton = ['Día de la nobleza', 'Día del medio', 'Día del trabajo', 'Día del espíritu', 'Día del bien'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
 				
 				return`${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
 }

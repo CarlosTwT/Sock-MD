@@ -95,13 +95,13 @@ exports.isUrl = (url) => {
 
 exports.getTime = (format, date) => {
 	if (date) {
-		return moment(date).locale('id').format(format)
+		return moment(date).locale('ec').format(format)
 	} else {
-		return moment.tz('Asia/Jakarta').locale('id').format(format)
+		return moment.tz('America/Guayaquil').locale('ec').format(format)
 	}
 }
 
-exports.formatDate = (n, locale = 'id') => {
+exports.formatDate = (n, locale = 'ec') => {
 	let d = new Date(n)
 	return d.toLocaleDateString(locale, {
 		weekday: 'long',
@@ -115,8 +115,8 @@ exports.formatDate = (n, locale = 'id') => {
 }
 
 exports.tanggal = (numer) => {
-	myMonths = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-				myDays = ['Minggu','Senin','Selasa','Rabu','Kamis','Jum’at','Sabtu']; 
+	myMonths = ["Enero","Febrerl","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembee"];
+				myDays = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sábado']; 
 				var tgl = new Date(numer);
 				var day = tgl.getDate()
 				bulan = tgl.getMonth()
@@ -124,11 +124,11 @@ exports.tanggal = (numer) => {
 				thisDay = myDays[thisDay];
 				var yy = tgl.getYear()
 				var year = (yy < 1000) ? yy + 1900 : yy; 
-				const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+				const time = moment.tz('America/Guayaquil').format('DD/MM HH:mm:ss')
 				let d = new Date
 				let locale = 'id'
 				let gmt = new Date(0).getTime() - new Date('1 January 1970').getTime()
-				let weton = ['Pahing', 'Pon','Wage','Kliwon','Legi'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
+				let weton = ['Dia de nobleza', 'Dia del medio','Día del trabajo','Día del espíritu','Dia del bien'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
 				
 				return`${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
 }

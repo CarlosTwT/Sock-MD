@@ -35,7 +35,7 @@ global.menuai = (prefix) => {
   々${prefix}openai
   々${prefix}gpt4
   々${prefix}tts
-  々${prefix}text2img
+  々${prefix}imagina
   々${prefix}blackbox
   々${prefix}gemini
 `);
@@ -95,6 +95,7 @@ return ctext(`${gris}「 O T H E R 」${gris}
 
   々${prefix}sc
   々${prefix}pvp >vs bot   
+  々${prefix}suitpvp >vs @tag     
   々${prefix}owner
   々${prefix}licencia
   々${prefix}afk
@@ -129,6 +130,7 @@ global.menusearch = (prefix) => {
 return ctext(`${gris}「 S E A R C H 」${gris}
 
   々${prefix}pinterest
+  々${prefix}gimage  
   々${prefix}igstalk >user
   々${prefix}leerqr >imagen
   々${prefix}pin
