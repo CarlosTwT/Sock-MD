@@ -51,7 +51,7 @@ global.autoread = true // false = off, true = on
 global.canal = 'Sock AI channel🎐' // Opcional 
 global.channel = "120363301101357890@newsletter" // Opcional
 global.botname = 'Ｓｏｃｋ ＭＤ' // este es el nombre del robot
-global.bottz = '593986755613' // Reemplácelo con el número del bot para obtener el código de emparejamiento. 
+global.bottz = 'Coloca tu número' // Reemplácelo con el número del bot para obtener el código de emparejamiento. 
 global.packname = 'C4rl0s_9e' // wm sticker
 global.author = `Fecha: ${moment.tz('America/Guayaquil').format('DD/MM/YY')}\nOwner: ᑕᖇᒪᔕ \nBot: +593 98 675 5613` // wm sticker
 global.prefa = ['','!','.',',','🐤','🗿']
