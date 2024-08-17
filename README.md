@@ -50,3 +50,5 @@ npm start
 # Gracias a
 
 -   [`Carlos`](https://github.com/CarlosTwT)
+-   ### `DONAR`
+- Puedes aportar para este proyecto aquí  [clic aquí](https://www.paypal.me/CarlosEEscobar)
