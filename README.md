@@ -25,11 +25,14 @@
 
 # Proyecto exclusivo del Hosting Cafirexos 
 
-Bot de WhatsApp con inteligencia artificial 
-
-# Pagina de Cafirexos 
-
-(https://cafirexos.com/)
+### `CAFIREXOS`
+<a href="https://cafirexos.com"><img src="https://cdn.cafirexos.com/logos%2Flogo_cfros_2000x2000.png" height="125px"></a>
+- Sitio web: [cafirexos.com](https://cafirexos.com)
+- Área de clientes: [clientes.cafirexos.com](https://clientes.cafirexos.com)
+- Panel: [panel.cafirexos.com](https://panel.cafirexos.com)
+- Documentación: [docs.cafirexos.com](https://docs.cafirexos.com)
+- Canal de WhatsApp: [clic aquí](https://cafirexos.com/whatsapp)
+- Comunidad: [clic aquí](https://cafirexos.com/comunidad)
 
 ### Statistics
 
