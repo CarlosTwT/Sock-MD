@@ -20,16 +20,16 @@
 
 # ¡Lee esto!
 
-- Cambiar [Config](https://github.com/CarlosTwT/Sock-MD/blob/main/setting.js)
+- Cambiar [Settings](https://github.com/CarlosTwT/Sock-MD/blob/main/system/settings/setting)
 - coloca el número del bot para el envío del código 
 
-# Proyecto exclusivo de flarexCloud 
+# Proyecto exclusivo del Hosting Cafirexos 
 
 Bot de WhatsApp con inteligencia artificial 
 
-# Pagina de flarexCloud 
+# Pagina de Cafirexos 
 
-###https://flarex.cloud/
+###https://cafirexos.com/
 
 ### Statistics
 
