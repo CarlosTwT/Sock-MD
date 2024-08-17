@@ -43,6 +43,7 @@ global.gris = '`' // no lo cambies
 global.wm = `Sock AI - Wa Bot` // footer text
 global.autobio = false // false = off, true = on
 global.autoread = true // false = off, true = on
+global.anticall = false // false = off, true = on
 //—————「 SYSTEM 」—————//
 
 
