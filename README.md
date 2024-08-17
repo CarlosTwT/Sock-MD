@@ -1,4 +1,4 @@
-<h1 align='center'>SOCK AI:wave:</h1>
+<h1 align='center'>SOCK AI</h1>
 
 <div align="center">
 <img src="https://telegra.ph/file/cabbcce333e384532528e.jpg" alt="SOCK AI" width="300" />
