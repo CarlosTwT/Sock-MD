@@ -20,7 +20,7 @@
 
 # ¡Lee esto!
 
-- Cambiar [Settings](https://github.com/CarlosTwT/Sock-MD/blob/main/system/settings/setting)
+- Cambiar [Settings](https://github.com/CarlosTwT/Sock-MD/system/settings/setting)
 - coloca el número del bot para el envío del código 
 
 # Proyecto exclusivo del Hosting Cafirexos 
