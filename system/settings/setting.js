@@ -38,12 +38,16 @@ global.conecct = {
     password: 'sockbot321'
 } // Emparejar remitentes de correo electrónico
 
+global.f1 = (a, b) => {
+let fake = {key: {remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 1, status: 1, surface: 1, message: a, orderTitle: '', thumbnail: b, sellerJid: '0@s.whatsapp.net'}}};
+return fake
+}
+
 global.sessionName = 'session' // no lo cambies
 global.gris = '`' // no lo cambies
 global.wm = `Sock AI - Wa Bot` // footer text
 global.autobio = false // false = off, true = on
 global.autoread = true // false = off, true = on
-global.anticall = false // false = off, true = on
 //—————「 SYSTEM 」—————//
 
 
@@ -52,7 +56,7 @@ global.anticall = false // false = off, true = on
 global.canal = 'Sock AI channel🎐' // Opcional 
 global.channel = "120363301101357890@newsletter" // Opcional
 global.botname = 'Ｓｏｃｋ ＭＤ' // este es el nombre del robot
-global.bottz = 'Coloca tu número' // Reemplácelo con el número del bot para obtener el código de emparejamiento. 
+global.bottz = '593986755613' // Reemplácelo con el número del bot para obtener el código de emparejamiento. 
 global.packname = 'C4rl0s_9e' // wm sticker
 global.author = `Fecha: ${moment.tz('America/Guayaquil').format('DD/MM/YY')}\nOwner: ᑕᖇᒪᔕ \nBot: +593 98 675 5613` // wm sticker
 global.prefa = ['','!','.',',','🐤','🗿']
@@ -73,7 +77,7 @@ global.ownermail = ['carlos.e.escobarmc@gmail.com'] // Opcional
 global.mess = {
     ban: ctext('*[ Error ]* el propietario lo ha prohibido'),
     badm: ctext('*[ Aviso del sistema ]* necesito ser *admin*'),
-    regis: ctext(`*[ Acceso denegado ]*\n\n¡Aún no te has registrado!\nRegístrate escribiendo .registrar!*`),
+    regis: ctext(`*[ Acceso denegado ]*\n\n¡Aún no te has registrado!\nRegístrate escribiendo .registrar edad\nEjemplo .registrar 17!*`),
     premium: ctext('*[ Aviso del sistema]* este comando es único para usuarios premium'),
     search: ctext('🔍 *buscando en el servidor. . .*'),
     done: ctext('Hecho...'),
