@@ -52,3 +52,5 @@ npm start
 -   [`Carlos`](https://github.com/CarlosTwT)
 -   ### `DONAR`
 - Puedes aportar para este proyecto aquí  [clic aquí](https://www.paypal.me/CarlosEEscobar)
+-  ### `Canal de WhatsApp`
+- [clic aquí](https://whatsapp.com/channel/0029ValFD2SFXUuaKQNsVB3h)
