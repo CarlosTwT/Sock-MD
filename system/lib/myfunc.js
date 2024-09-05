@@ -1,19 +1,13 @@
-/**
-   * Create By Dika Ardnt.
-   * Contact Me on wa.me/6288292024190
-   * Follow https://github.com/DikaArdnt
-*/
 
-const { proto, delay, getContentType } = global.baileys
+const { proto, delay, getContentType, areJidsSameUser, generateWAMessage } = require("@whiskeysockets/baileys")
 const chalk = require('chalk')
 const fs = require('fs')
-const Crypto = require('crypto')
 const axios = require('axios')
 const moment = require('moment-timezone')
 const { sizeFormatter } = require('human-readable')
 const util = require('util')
 const Jimp = require('jimp')
-const { defaultMaxListeners } = require('stream')
+//const { defaultMaxListeners } = require('stream')
 
 
 const unixTimestampSeconds = (date = new Date()) => Math.floor(date.getTime() / 1000)
@@ -50,61 +44,25 @@ exports.getBuffer = async (url, options) => {
 		})
 		return res.data
 	} catch (err) {
-		return err
+		return false;
 	}
 }
 
-exports.fetchJson = async (url, options) => {
+exports.fetchJson = async (url, apikey) => {
     try {
-        options ? options : {}
+        apikey ? apikey : null
         const res = await axios({
             method: 'GET',
             url: url,
             headers: {
+            	'apikey': apikey,
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36'
-            },
-            ...options
+            }
         })
         return res.data
     } catch (err) {
-        return err
+        return false
     }
-}
-
-exports.ssweb = (url, device = 'desktop') => {
-     return new Promise((resolve, reject) => {
-          const base = 'https://www.screenshotmachine.com'
-          const param = {
-            url: url,
-            device: device,
-            cacheLimit: 0
-          }
-          axios({url: base + '/capture.php',
-               method: 'POST',
-               data: new URLSearchParams(Object.entries(param)),
-               headers: {
-                    'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'
-               }
-          }).then((data) => {
-               const cookies = data.headers['set-cookie']
-               if (data.data.status == 'success') {
-                    axios.get(base + '/' + data.data.link, {
-                         headers: {
-                              'cookie': cookies.join('')
-                         },
-                         responseType: 'arraybuffer'
-                    }).then(({ data }) => {
-                        result = {
-                            status: 200,
-                            result: data
-                        }
-                         resolve(result)
-                    })
-               } else {
-                    reject({ status: 404, statuses: `Link Error`, message: data.data })
-               }
-          }).catch(reject)
-     })
 }
 
 exports.runtime = function(seconds) {
@@ -157,8 +115,8 @@ exports.formatDate = (n, locale = 'id') => {
 }
 
 exports.tanggal = (numer) => {
-	myMonths = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
-				myDays = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado']; 
+	myMonths = ["Enerl","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+				myDays = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sábado']; 
 				var tgl = new Date(numer);
 				var day = tgl.getDate()
 				bulan = tgl.getMonth()
@@ -170,9 +128,9 @@ exports.tanggal = (numer) => {
 				let d = new Date
 				let locale = 'id'
 				let gmt = new Date(0).getTime() - new Date('1 January 1970').getTime()
-				let weton = ['Día de la nobleza', 'Día del medio', 'Día del trabajo', 'Día del espíritu', 'Día del bien'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
+				let weton = ['Pahing', 'Pon','Wage','Kliwon','Legi'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
 				
-				return`${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
+				return`${thisDay}, ${day} ${myMonths[bulan]} ${year}`
 }
 
 exports.formatp = sizeFormatter({
@@ -352,6 +310,23 @@ exports.smsg = (conn, m, store) => {
 	 * @returns 
 	 */
 	m.copyNForward = (jid = m.chat, forceForward = false, options = {}) => conn.copyNForward(jid, m, forceForward, options)
+
+conn.appenTextMessage = async(text, chatUpdate) => {
+let messages = await generateWAMessage(m.chat, { text: text, mentions: m.mentionedJid }, {
+userJid: conn.user.id,
+quoted: m.quoted && m.quoted.fakeObj
+})
+messages.key.fromMe = areJidsSameUser(m.sender, conn.user.id)
+messages.key.id = m.key.id
+messages.pushName = m.pushName
+if (m.isGroup) messages.participant = m.sender
+let msg = {
+    ...chatUpdate,
+    messages: [proto.WebMessageInfo.fromObject(messages)],
+    type: 'append'
+}
+conn.ev.emit('messages.upsert', msg)
+}
 
     return m
 }

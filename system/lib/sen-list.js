@@ -53,7 +53,7 @@ return ctext(`${gris}「 D A T A B A S E 」${gris}
 
   々${prefix}ping
   々${prefix}profile @tag
-  々${prefix}serverinfo
+  々${prefix}infoserver
   々${prefix}get >url
   々${prefix}ccgenerator 
   々${prefix}runtime
@@ -62,9 +62,11 @@ return ctext(`${gris}「 D A T A B A S E 」${gris}
 global.menudownload = (prefix) => {
 return ctext(`${gris}「 D O W N L O A D 」${gris}
 
-  々${prefix}ytmp4
+  々${prefix}ytmp4 >link
+  々${prefix}ytmp3 >link
+  々${prefix}mediafire
   々${prefix}whatmusic
-  々${prefix}ytmp3
+  々${prefix}twitervid  
   々${prefix}tiktok
   々${prefix}fb >video 
   々${prefix}threads
@@ -95,7 +97,8 @@ return ctext(`${gris}「 O T H E R 」${gris}
 
   々${prefix}sc
   々${prefix}pvp >vs bot   
-  々${prefix}suitpvp >vs @tag     
+  々${prefix}suitpvp >vs @tag
+  々${prefix}gamebandera       
   々${prefix}owner
   々${prefix}licencia
   々${prefix}afk
@@ -111,8 +114,6 @@ return ctext(`${gris}「 O W N E R 」${gris}
   々${prefix}pushcontact
   々${prefix}getidgc
   々${prefix}join
-  々${prefix}addgc
-  々${prefix}delgc
   々${prefix}backup
   々${prefix}getcase
   々${prefix}biochange
@@ -130,6 +131,7 @@ global.menusearch = (prefix) => {
 return ctext(`${gris}「 S E A R C H 」${gris}
 
   々${prefix}pinterest
+  々${prefix}checarweb  
   々${prefix}gimage  
   々${prefix}igstalk >user
   々${prefix}leerqr >imagen
@@ -166,8 +168,7 @@ return ctext(`${gris}「 S T I C K E R S 」${gris}
 global.menutools = (prefix) => {
 return ctext(`${gris}「 T O O L S 」${gris}
 
-  々${prefix}hd
-  々${prefix}ssweb
+  々${prefix}remini
   々${prefix}ssfull
   々${prefix}toimg
   々${prefix}toaud
@@ -178,6 +179,8 @@ return ctext(`${gris}「 T O O L S 」${gris}
   々${prefix}shortlink
   々${prefix}sticker
   々${prefix}smeme
+  々${prefix}smeta
+  々${prefix}sai  
   々${prefix}wm
   々${prefix}letra
   々${prefix}gitclone
