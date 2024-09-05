@@ -52,7 +52,7 @@ global.anticall = true // false = off, true = on
 global.canal = 'Sock AI channel🎐' // Opcional 
 global.channel = "120363301101357890@newsletter" // Opcional
 global.botname = 'ＳＯＣＫ ＡＩ' // este es el nombre del robot
-global.bottz = '593986755613' // Reemplácelo con el número del bot para obtener el código de emparejamiento. 
+global.bottz = '' // Reemplácelo con el número del bot para obtener el código de emparejamiento. 
 global.packname = '+593 99 139 8786\n' // wm sticker
 global.author = ``//Fecha: ${moment.tz('America/Guayaquil').format('DD/MM/YY')}\n\n // wm sticker
 global.prefa = ['','!','.',',','🐤','🗿']
